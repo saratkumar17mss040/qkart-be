@@ -1,4 +1,4 @@
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
 import React, { useLayoutEffect } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import Checkout from './components/Checkout';
@@ -10,7 +10,7 @@ import Thanks from './components/Thanks';
 import ipConfig from './ipConfig.json';
 
 export const config = {
-	endpoint: `http://${ipConfig.workspaceIp}:8082/v1`,
+	endpoint: `https://${ipConfig.workspaceIp}/v1`,
 };
 
 export default function App(props) {
